@@ -17,8 +17,8 @@ jobs:
           
       - name: Count test files
         run: |
-          echo "Layihədəki bütün faylların siyahısı:"
-          ls -R
+          echo "Bütün qovluqlardakı PDF testlərinin siyahısı:"
+          find . -iname "*pdf" -type f
           echo "-----------------------"
-          echo "Tapılan PDF testlərinin sayı:"
-          find . -maxdepth 1 -iname "*.pdf" | wc -l        
+          echo "Cəmi PDF sayı:"
+          find . -iname "*pdf" -type f | wc -l
