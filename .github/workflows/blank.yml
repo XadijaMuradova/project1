@@ -1,14 +1,23 @@
-name: My-First-Pipeline
+name: Math-Project-Stats
 
 on: [push]
 
 jobs:
-  check-system:
+  inventory:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Display success message
-        run: echo "The pipeline is running successfully in project1!"
+      - name: Project Summary
+        run: |
+          echo "--- Layihə Hesabatı ---"
+          echo "Layihə adı: Project1 (Math Graduation Exams)"
+          echo "Yoxlanılan tarix: $(date)"
+          echo "-----------------------"
+          
+      - name: Count test files
+        run: |
+          echo "Layihədəki cəmi fayl sayı:"
+          ls -R | grep .txt | wc -l || echo "Hələ .txt faylı tapılmadı."
         
