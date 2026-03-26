@@ -1,3 +1,4 @@
+![Status Badge](https://github.com/XadijaMuradova/project1/actions/workflows/blank.yml/badge.svg)
 OTK Buraxılış İmtahanları - Riyaziyyat
 Bu PDF Sakit Sultanov tərəfindən hazırlanmışdır. 
 📚 Məzmun
